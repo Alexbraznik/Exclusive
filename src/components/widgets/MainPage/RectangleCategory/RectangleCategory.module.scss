@@ -1,0 +1,19 @@
+@import "mixins";
+@import "variables";
+
+.container {
+  @include items-center;
+  gap: 10px;
+  margin-bottom: 24px;
+
+  div {
+    background-color: $crimson;
+    width: 20px;
+    height: 40px;
+    @include border-radius(4px);
+  }
+
+  p {
+    color: $crimson;
+  }
+}

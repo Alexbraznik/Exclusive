@@ -1,4 +1,4 @@
-import { DropDown } from "../../../shared/assets/MainPage";
+import { DropDown } from "../../../../shared/assets/MainPage";
 import styles from "./TopHeader.module.scss";
 
 export function TopHeader(): JSX.Element {

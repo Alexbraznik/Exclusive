@@ -44,7 +44,7 @@
       gap: 8px;
 
       button {
-        @include iconSize(34px);
+        @include size(34px);
         @include flex-center;
         border: 0;
         background-color: white;

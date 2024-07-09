@@ -6,65 +6,13 @@
   margin-bottom: 80px;
 }
 
-.today {
-  @include items-center;
-  gap: 10px;
-  margin-bottom: 24px;
-
-  div {
-    background-color: $crimson;
-    width: 20px;
-    height: 40px;
-    @include border-radius(4px);
-  }
-
-  p {
-    color: $crimson;
-  }
-}
-
 .flashSales {
   @include items-center;
   margin-bottom: 40px;
 
   h2 {
-    font-size: 36px;
-    font-family: "Inter";
-    line-height: 48px;
-    letter-spacing: 4%;
-    font-weight: 600;
+    @include h2;
     margin-right: 87px;
-  }
-
-  .flashSales__arrow {
-    @include items-center;
-    margin-left: auto;
-    gap: 8px;
-
-    .btn-prev,
-    .btn-next {
-      @include items-center;
-      @include border-radius(50%);
-      @include iconSize(46px);
-      cursor: pointer;
-      border: 0;
-      background-color: $secondary;
-
-      &:hover {
-        opacity: 0.8;
-      }
-
-      .arrow-prev,
-      .arrow-next {
-        @include iconSize(24px);
-        display: flex;
-        margin: 0 auto;
-      }
-
-      .arrow-prev {
-        @include rotate(180deg);
-      }
-    }
   }
 }
 

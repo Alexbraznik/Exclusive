@@ -1,8 +1,9 @@
 import styles from "./FlashSales.module.scss";
 import { setTimer } from "./Timer/setTimer";
-import { IoArrowForwardSharp } from "react-icons/io5";
+// import { IoArrowForwardSharp } from "react-icons/io5";
 import { ProductSlider, Timer } from "./";
 import { useRef } from "react";
+import { BtnArrow, RectangleCategory } from "../../widgets";
 
 export function FlashSales(): JSX.Element {
   const expiryTimestamp = setTimer(10, 21); // установка таймера (дни, часы)
@@ -13,23 +14,13 @@ export function FlashSales(): JSX.Element {
 
   return (
     <section className={styles.wrapper}>
-      <div className={styles.today}>
-        <div></div>
-        <p>Todays</p>
-      </div>
+      <RectangleCategory>Today’s</RectangleCategory>
 
       <div className={styles.flashSales}>
         <h2>Flash Sales</h2>
         <Timer expiryTimestamp={expiryTimestamp} />
 
-        <div className={styles.flashSales__arrow}>
-          <button ref={prevRef} className={styles["btn-prev"]}>
-            <IoArrowForwardSharp className={styles["arrow-prev"]} />
-          </button>
-          <button ref={nextRef} className={styles["btn-next"]}>
-            <IoArrowForwardSharp className={styles["arrow-next"]} />
-          </button>
-        </div>
+        <BtnArrow prevRef={prevRef} nextRef={nextRef} />
       </div>
 
       <ProductSlider prevRef={prevRef} nextRef={nextRef} />

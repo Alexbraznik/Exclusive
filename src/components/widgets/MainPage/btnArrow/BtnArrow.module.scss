@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+
+.container {
+  @include items-center;
+  margin-left: auto;
+  gap: 8px;
+
+  .btn-prev,
+  .btn-next {
+    @include items-center;
+    @include border-radius(50%);
+    @include size(46px);
+    cursor: pointer;
+    border: 0;
+    background-color: $secondary;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    .arrow-prev,
+    .arrow-next {
+      @include size(24px);
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .arrow-prev {
+      @include rotate(180deg);
+    }
+  }
+}

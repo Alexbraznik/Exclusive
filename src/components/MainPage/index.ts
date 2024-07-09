@@ -4,6 +4,7 @@ import { FlashSales } from "./FlashSales/FlashSales";
 import { Header } from "./Header/Header";
 import { MainPage } from "./MainPage";
 // constants
+import { BrowseByCategorySlider } from "./constants/BrowseByCategorySlider";
 import { CategoryMenuSlider } from "./constants/CategoryMenuSlider";
 import { ProductSliderList } from "./constants/ProductSliderList";
 
@@ -11,4 +12,4 @@ import { ProductSliderList } from "./constants/ProductSliderList";
 export { MainPage, Header, CategorySection, FlashSales };
 
 // constants
-export { CategoryMenuSlider, ProductSliderList };
+export { CategoryMenuSlider, ProductSliderList, BrowseByCategorySlider };
