@@ -1,0 +1,68 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  width: 892px;
+  height: 344px;
+}
+
+.item {
+  display: flex;
+  position: relative;
+  background-color: black;
+
+  .item__description {
+    position: relative;
+    color: white;
+    padding: 58px 0 0 64px;
+    z-index: 2;
+
+    .item-voucher {
+      font-size: 48px;
+      font-family: "Inter";
+      line-height: 60px;
+      letter-spacing: 4%;
+      font-weight: 600;
+      margin-bottom: 22px;
+      width: 294px;
+    }
+
+    .item__description-title {
+      @include items-center;
+      gap: 24px;
+      margin-bottom: 20px;
+
+      .faApple {
+        width: 40px;
+        height: 49px;
+        color: white;
+      }
+
+      p {
+        @include standart-text;
+      }
+    }
+
+    .item__action {
+      @include standart-text;
+      @include items-center;
+      gap: 8px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+
+      .arrow {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .item-image {
+    padding-top: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}

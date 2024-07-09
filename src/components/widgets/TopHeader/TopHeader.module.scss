@@ -1,0 +1,55 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  width: 100%;
+  background-color: #000;
+  @include flex-center;
+}
+
+.container {
+  @include items-center;
+  width: 1170px;
+  height: 48px;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+}
+
+.sale,
+.language {
+  @include items-center;
+  color: $text-white;
+}
+
+.sale {
+  padding-right: 231px;
+  gap: 8px;
+  font-size: 14px;
+
+  P {
+    line-height: 21px;
+  }
+
+  button {
+    @include button-transparent;
+    text-decoration: underline;
+    line-height: 24px;
+    font-weight: 600;
+    color: $text-white;
+    cursor: pointer;
+  }
+}
+
+.language {
+  gap: 5px;
+  cursor: pointer;
+
+  button {
+    @include button-transparent;
+    cursor: pointer;
+
+    .dropdown {
+      color: #fff;
+    }
+  }
+}

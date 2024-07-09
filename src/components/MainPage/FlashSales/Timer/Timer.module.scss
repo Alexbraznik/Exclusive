@@ -1,0 +1,39 @@
+@import "mixins";
+@import "variables";
+
+.container {
+  @include items-center;
+}
+
+.item {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  div {
+    @include items-center;
+    gap: 17px;
+
+    .item__countdown {
+      font-family: "Inter";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 4%;
+    }
+  }
+
+  q {
+    quotes: none;
+    font-size: 32px;
+    color: #e07575;
+  }
+}

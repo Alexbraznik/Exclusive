@@ -1,0 +1,47 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-right: 0.5px solid $border-gray;
+    height: calc(100% + 40px);
+    transform: translateY(-10.4%);
+    top: 0;
+    right: 0;
+  }
+}
+
+.categories {
+  list-style: none;
+  @include standart-text;
+  margin-right: 16px;
+
+  li {
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .categories__fashion {
+    @include items-center;
+    align-items: baseline;
+    cursor: pointer;
+
+    li {
+      margin-right: 51px;
+    }
+
+    .dropdown {
+      color: #000;
+      @include rotate(-90deg);
+      margin-left: auto;
+    }
+  }
+}
