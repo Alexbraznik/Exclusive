@@ -1,0 +1,89 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  height: 500px;
+  background-color: black;
+  @include items-center;
+  overflow: hidden;
+  margin-bottom: 71px;
+}
+
+.description {
+  padding: 69px 0 69px 56px;
+  width: 450px;
+
+  p {
+    color: $greenish;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: "Inter";
+    letter-spacing: 4%;
+    margin-bottom: 32px;
+    color: white;
+  }
+
+  .description__timer {
+    @include flex;
+    gap: 24px;
+
+    .description__timer-item {
+      @include flex-column-center;
+      margin-bottom: 40px;
+      width: 62px;
+      height: 62px;
+      background-color: white;
+      @include border-radius(50%);
+
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 11px;
+        line-height: 18px;
+        color: black;
+        margin: 0;
+      }
+    }
+  }
+
+  .button {
+    background-color: #00ff66;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
+}
+
+.image__container {
+  @include items-center;
+  width: 500px;
+  height: 100%;
+  position: relative;
+  @include border-radius(50%);
+
+  .container-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    filter: blur(50px);
+    background-color: #d9d9d9;
+    @include border-radius(50%);
+  }
+
+  .image {
+    position: relative;
+  }
+}

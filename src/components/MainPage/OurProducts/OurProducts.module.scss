@@ -1,0 +1,12 @@
+@import "mixins";
+@import "variables";
+
+.header {
+  @include flex;
+  margin-bottom: 60px;
+}
+
+.itemList {
+  @include grid(4, 2);
+  gap: 30px;
+}

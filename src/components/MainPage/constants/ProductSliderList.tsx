@@ -8,18 +8,20 @@ import {
 
 interface IProductSliderList {
   id: number;
-  picture: StaticImageData;
+  image: StaticImageData;
+  imageTitle: string;
   discount: string;
   title: string;
   currentPrice: number;
-  prevPrice: number;
+  prevPrice?: number;
   rating: number;
 }
 
 export const ProductSliderList: IProductSliderList[] = [
   {
     id: 1,
-    picture: Gamepad,
+    image: Gamepad,
+    imageTitle: "Gamepad",
     discount: "40%",
     title: "HAVIT HV-G92 Gamepad",
     currentPrice: 120,
@@ -28,7 +30,8 @@ export const ProductSliderList: IProductSliderList[] = [
   },
   {
     id: 2,
-    picture: Keyboard,
+    image: Keyboard,
+    imageTitle: "Keyboard",
     discount: "35%",
     title: "AK-900 Wired Keyboard",
     currentPrice: 960,
@@ -37,7 +40,8 @@ export const ProductSliderList: IProductSliderList[] = [
   },
   {
     id: 3,
-    picture: Monitor,
+    image: Monitor,
+    imageTitle: "Monitor",
     discount: "30%",
     title: "IPS LCD Gaming Monitor",
     currentPrice: 370,
@@ -46,25 +50,28 @@ export const ProductSliderList: IProductSliderList[] = [
   },
   {
     id: 4,
-    picture: Chair,
+    image: Chair,
+    imageTitle: "Chair",
     discount: "25%",
-    title: "HAVIT HV-G92 Gamepad",
+    title: "S-Series Comfort Chair ",
     currentPrice: 375,
     prevPrice: 400,
     rating: 99,
   },
   {
     id: 5,
-    picture: Chair,
+    image: Chair,
+    imageTitle: "Chair",
     discount: "25%",
-    title: "HAVIT HV-G92 Gamepad",
+    title: "S-Series Comfort Chair ",
     currentPrice: 375,
     prevPrice: 400,
     rating: 99,
   },
   {
     id: 6,
-    picture: Monitor,
+    image: Monitor,
+    imageTitle: "Monitor",
     discount: "30%",
     title: "IPS LCD Gaming Monitor",
     currentPrice: 370,
@@ -73,7 +80,8 @@ export const ProductSliderList: IProductSliderList[] = [
   },
   {
     id: 7,
-    picture: Gamepad,
+    image: Gamepad,
+    imageTitle: "Gamepad",
     discount: "40%",
     title: "HAVIT HV-G92 Gamepad",
     currentPrice: 120,
@@ -82,7 +90,8 @@ export const ProductSliderList: IProductSliderList[] = [
   },
   {
     id: 8,
-    picture: Keyboard,
+    image: Keyboard,
+    imageTitle: "Keyboard",
     discount: "35%",
     title: "AK-900 Wired Keyboard",
     currentPrice: 960,

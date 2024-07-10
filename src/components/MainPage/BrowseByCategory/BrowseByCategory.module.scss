@@ -3,6 +3,7 @@
 
 .wrapper {
   margin-bottom: 70px;
+  border-bottom: 0.5px solid $border-gray;
 }
 
 .header {
@@ -14,21 +15,39 @@
   }
 }
 
-.item {
-  width: 170px;
-  height: 145px;
-  @include flex-center;
-  background-color: lightblue;
-  border: 1px solid rgba(#000000, 0.3);
+.categoryList {
+  margin-bottom: 70px;
 
-  .item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .item {
+    width: 170px;
+    height: 145px;
+    @include flex-center;
+    border: 1px solid rgba(#000000, 0.3);
+    @include border-radius(4px);
 
-    div {
-      margin-bottom: 16px;
+    .item__container {
+      @include flex-column-center;
+      color: black;
+      transition: color 0.5s ease;
+
+      div {
+        margin-bottom: 16px;
+      }
+
+      p {
+        @include standart-text;
+      }
+    }
+
+    &:hover {
+      background-color: $crimson;
+    }
+
+    &:hover .item__container {
+      > div,
+      > p {
+        color: white;
+      }
     }
   }
 }

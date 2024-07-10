@@ -7,7 +7,7 @@
 }
 
 .item {
-  display: flex;
+  @include flex;
   position: relative;
   background-color: black;
 

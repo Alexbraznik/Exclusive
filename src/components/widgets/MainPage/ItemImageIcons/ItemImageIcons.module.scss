@@ -1,0 +1,19 @@
+@import "mixins";
+
+.icons {
+  position: absolute;
+  @include flex-column;
+  top: 0;
+  right: 0;
+  margin: 12px 12px 0 0;
+  gap: 8px;
+
+  button {
+    @include size(34px);
+    @include flex-center;
+    border: 0;
+    background-color: white;
+    @include border-radius(50%);
+    cursor: pointer;
+  }
+}

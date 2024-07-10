@@ -1,9 +1,7 @@
 import styles from "./FlashSales.module.scss";
-import { setTimer } from "./Timer/setTimer";
-// import { IoArrowForwardSharp } from "react-icons/io5";
 import { ProductSlider, Timer } from "./";
 import { useRef } from "react";
-import { BtnArrow, RectangleCategory } from "../../widgets";
+import { BtnArrow, Button, RectangleCategory, setTimer } from "../../widgets";
 
 export function FlashSales(): JSX.Element {
   const expiryTimestamp = setTimer(10, 21); // установка таймера (дни, часы)
@@ -24,7 +22,9 @@ export function FlashSales(): JSX.Element {
       </div>
 
       <ProductSlider prevRef={prevRef} nextRef={nextRef} />
-      <button className={styles.viewAll}>View All Products</button>
+      <Button style={{ margin: "0 auto", marginBottom: "60px" }}>
+        View All Products
+      </Button>
     </section>
   );
 }

@@ -1,0 +1,19 @@
+@import "mixins";
+@import "variables";
+
+.button {
+  background-color: $crimson;
+  border: 0;
+  color: #fafafa;
+  @include border-radius(4px);
+  @include standart-text;
+  font-weight: 500;
+  @include flex;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 16px 48px;
+
+  &:hover {
+    background-color: #e31313;
+  }
+}

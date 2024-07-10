@@ -15,16 +15,3 @@
     margin-right: 87px;
   }
 }
-
-.viewAll {
-  padding: 16px 48px;
-  @include standart-text;
-  font-weight: 500;
-  display: flex;
-  margin: 0 auto;
-  border: 0;
-  background-color: $crimson;
-  @include border-radius(4px);
-  color: #fafafa;
-  margin-bottom: 60px;
-}

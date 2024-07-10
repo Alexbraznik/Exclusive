@@ -1,6 +1,13 @@
 import styles from "./MainPage.module.scss";
-import { CategorySection, FlashSales, Header } from "./";
-import { BrowseByCategory } from "./BrowseByCategory/BrowseByCategory";
+import {
+  BestSellingProducts,
+  BrowseByCategory,
+  CategorySection,
+  DiscountedProduct,
+  FlashSales,
+  Header,
+  OurProducts,
+} from "./";
 
 export function MainPage(): JSX.Element {
   return (
@@ -10,6 +17,9 @@ export function MainPage(): JSX.Element {
         <CategorySection />
         <FlashSales />
         <BrowseByCategory />
+        <BestSellingProducts />
+        <DiscountedProduct />
+        <OurProducts />
       </div>
     </div>
   );
