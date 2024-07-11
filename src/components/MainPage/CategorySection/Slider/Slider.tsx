@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/mousewheel";
 import { useEffect } from "react";
+import { ShopNow } from "../../../widgets";
 
 export function Slider(): JSX.Element {
   // useEffect для стилизации Swiper
@@ -55,7 +56,7 @@ export function Slider(): JSX.Element {
               </div>
               <p className={styles["item-voucher"]}>Up to 10% off Voucher</p>
               <div className={styles["item__action"]}>
-                <span>Shop Now</span>
+                <ShopNow style={{ scale: "1.01" }} />
                 <IoMdArrowForward className={styles.arrow} />
               </div>
             </div>

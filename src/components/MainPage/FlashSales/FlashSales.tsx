@@ -16,6 +16,7 @@ export function FlashSales(): JSX.Element {
 
       <div className={styles.flashSales}>
         <h2>Flash Sales</h2>
+
         <Timer expiryTimestamp={expiryTimestamp} />
 
         <BtnArrow prevRef={prevRef} nextRef={nextRef} />

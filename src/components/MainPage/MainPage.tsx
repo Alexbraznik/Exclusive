@@ -4,7 +4,9 @@ import {
   BrowseByCategory,
   CategorySection,
   DiscountedProduct,
+  Featured,
   FlashSales,
+  Footer,
   Header,
   OurProducts,
 } from "./";
@@ -12,15 +14,19 @@ import {
 export function MainPage(): JSX.Element {
   return (
     <div className={styles.main}>
-      <div className={styles.container}>
-        <Header />
-        <CategorySection />
-        <FlashSales />
-        <BrowseByCategory />
-        <BestSellingProducts />
-        <DiscountedProduct />
-        <OurProducts />
+      <Header />
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <CategorySection />
+          <FlashSales />
+          <BrowseByCategory />
+          <BestSellingProducts />
+          <DiscountedProduct />
+          <OurProducts />
+          <Featured />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

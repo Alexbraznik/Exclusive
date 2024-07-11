@@ -1,7 +1,17 @@
 import { useRef, useState } from "react";
-import { BtnArrow, ItemProduct, RectangleCategory } from "../../widgets";
+import {
+  BtnArrow,
+  Button,
+  ItemProduct,
+  RectangleCategory,
+} from "../../widgets";
 import styles from "./OurProducts.module.scss";
+import "swiper/css";
 import { OurProductsList } from "../constants/OurProductsList";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid, Navigation } from "swiper/modules";
+import "swiper/css/grid";
+import { useEffectSlider } from "../../../shared/model";
 
 export function OurProducts(): JSX.Element {
   const [swiper, setSwiper] = useState(null); // хук, чтобы ref инициализировались после swiper
@@ -10,8 +20,10 @@ export function OurProducts(): JSX.Element {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
 
+  useEffectSlider({ prevRef, nextRef, swiper });
+
   return (
-    <section>
+    <section className={styles.wrapper}>
       <RectangleCategory>Our Products</RectangleCategory>
 
       <div className={styles.header}>
@@ -19,11 +31,33 @@ export function OurProducts(): JSX.Element {
         <BtnArrow prevRef={prevRef} nextRef={nextRef} />
       </div>
 
-      <div className={styles.itemList}>
+      <Swiper
+        className={styles.itemList}
+        onSwiper={setSwiper}
+        slidesPerView={4}
+        grid={{
+          rows: 2,
+          fill: "row",
+        }}
+        spaceBetween={30}
+        modules={[Navigation, Grid]}
+        loop
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+      >
         {OurProductsList.map((item) => (
-          <ItemProduct item={item} key={item.id} ratingFlex />
+          <SwiperSlide key={item.id}>
+            <ItemProduct
+              item={item}
+              ratingFlex
+              choiseColor={item.ChooseСolor}
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
+      <Button style={{ margin: "0 auto" }}>View All Products</Button>
     </section>
   );
 }

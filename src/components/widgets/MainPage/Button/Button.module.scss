@@ -11,9 +11,11 @@
   @include flex;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: scale 0.3s ease;
   padding: 16px 48px;
 
   &:hover {
     background-color: #e31313;
+    scale: 1.1;
   }
 }

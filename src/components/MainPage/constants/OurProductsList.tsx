@@ -18,6 +18,7 @@ interface IOurProductsList {
   newProduct?: boolean;
   currentPrice: number;
   ChooseСolor?: boolean;
+  colorOne?: string;
   rating: number;
 }
 
@@ -62,6 +63,7 @@ export const OurProductsList: IOurProductsList[] = [
     newProduct: true,
     currentPrice: 960,
     ChooseСolor: true, // изменить
+    colorOne: "Crimson",
     rating: 65,
   },
   {
@@ -72,6 +74,7 @@ export const OurProductsList: IOurProductsList[] = [
     newProduct: true,
     currentPrice: 1160,
     ChooseСolor: true, // изменить
+    colorOne: "Yellow",
     rating: 35,
   },
   {
@@ -82,6 +85,7 @@ export const OurProductsList: IOurProductsList[] = [
     newProduct: true,
     currentPrice: 660,
     ChooseСolor: true, // изменить
+    colorOne: "Black",
     rating: 55,
   },
   {
@@ -91,6 +95,92 @@ export const OurProductsList: IOurProductsList[] = [
     title: "Quilted Satin Jacket",
     currentPrice: 660,
     ChooseСolor: true, // изменить
+    colorOne: "Black",
     rating: 55,
+  },
+  {
+    id: 9,
+    image: CanonCamera,
+    imageTitle: "CanonCamera",
+    title: "CANON EOS DSLR Camera",
+    currentPrice: 360,
+    rating: 95,
+  },
+  {
+    id: 10,
+    image: Laptop,
+    imageTitle: "Laptop",
+    title: "ASUS FHD Gaming Laptop",
+    currentPrice: 700,
+    rating: 325,
+  },
+  {
+    id: 11,
+    image: Sneakers,
+    imageTitle: "Sneakers",
+    title: "Jr. Zoom Soccer Cleats",
+    newProduct: true,
+    currentPrice: 1160,
+    ChooseСolor: true, // изменить
+    colorOne: "Yellow",
+    rating: 35,
+  },
+  {
+    id: 12,
+    image: Jacket,
+    imageTitle: "Jacket",
+    title: "Quilted Satin Jacket",
+    currentPrice: 660,
+    ChooseСolor: true, // изменить
+    colorOne: "Black",
+    rating: 55,
+  },
+  {
+    id: 13,
+    image: CanonCamera,
+    imageTitle: "CanonCamera",
+    title: "CANON EOS DSLR Camera",
+    currentPrice: 360,
+    rating: 95,
+  },
+  {
+    id: 14,
+    image: Laptop,
+    imageTitle: "Laptop",
+    title: "ASUS FHD Gaming Laptop",
+    currentPrice: 700,
+    rating: 325,
+  },
+  {
+    id: 15,
+    image: CanonCamera,
+    imageTitle: "CanonCamera",
+    title: "CANON EOS DSLR Camera",
+    currentPrice: 360,
+    rating: 95,
+  },
+  {
+    id: 17,
+    image: Laptop,
+    imageTitle: "Laptop",
+    title: "ASUS FHD Gaming Laptop",
+    currentPrice: 700,
+    rating: 325,
+  },
+  {
+    id: 18,
+    image: CanonCamera,
+    imageTitle: "CanonCamera",
+    title: "CANON EOS DSLR Camera",
+    currentPrice: 360,
+    rating: 95,
+  },
+  {
+    id: 19,
+    image: Laptop,
+    imageTitle: "Laptop",
+    title: "ASUS FHD Gaming Laptop",
+    currentPrice: 700,
+    rating: 325,
   },
 ];

@@ -1,0 +1,20 @@
+@import "mixins";
+@import "variables";
+
+.btn-next {
+  @include border-radius(50%);
+  @include size(46px);
+  cursor: pointer;
+  border: 0;
+  background-color: $secondary;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .arrow-next {
+    @include size(24px);
+    @include flex;
+    margin: 0 auto;
+  }
+}

@@ -8,6 +8,10 @@ import { HeadPhones } from "./svg/MainPage/BrowseByCategory/HeadPhones";
 import { Phones } from "./svg/MainPage/BrowseByCategory/Phones";
 import { SmartWatch } from "./svg/MainPage/BrowseByCategory/SmartWatch";
 
+import { Delivery } from "./svg/MainPage/Featured/Delivery";
+import { Guatantee } from "./svg/MainPage/Featured/Guatantee";
+import { Support } from "./svg/MainPage/Featured/Support";
+
 // png
 import Iphone14 from "./png/CategorySection/Iphone14.png";
 
@@ -32,8 +36,24 @@ import Jacket from "./png/OurProducts/Jacket.png";
 import Laptop from "./png/OurProducts/Laptop.png";
 import Sneakers from "./png/OurProducts/Sneakers.png";
 
+import Perfume from "./png/Featured/Perfume.png";
+import PlayStation from "./png/Featured/PlayStation.png";
+import Speakers from "./png/Featured/Speakers.png";
+import WomensCollections from "./png/Featured/WomensCollections.png";
+
 // svg
-export { DropDown, Camera, Computers, Gaming, HeadPhones, Phones, SmartWatch };
+export {
+  DropDown,
+  Camera,
+  Computers,
+  Gaming,
+  HeadPhones,
+  Phones,
+  SmartWatch,
+  Delivery,
+  Guatantee,
+  Support,
+};
 
 // png
 export {
@@ -55,4 +75,8 @@ export {
   Jacket,
   Laptop,
   Sneakers,
+  Perfume,
+  PlayStation,
+  Speakers,
+  WomensCollections,
 };

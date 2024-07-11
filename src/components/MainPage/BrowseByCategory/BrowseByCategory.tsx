@@ -26,7 +26,7 @@ export function BrowseByCategory(): JSX.Element {
       </div>
       <Swiper
         className={styles.categoryList}
-        slidesPerView={6}
+        slidesPerView={6.1}
         spaceBetween={30}
         loop={true}
         modules={[Navigation]}

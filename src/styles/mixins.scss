@@ -154,3 +154,9 @@
   -ms-grid-columns: repeat($columns, 1fr);
   -ms-grid-rows: repeat($rows, 1fr);
 }
+
+// Подчеркивание
+@mixin underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

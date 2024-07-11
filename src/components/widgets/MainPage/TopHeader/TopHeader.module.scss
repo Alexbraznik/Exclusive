@@ -29,15 +29,6 @@
   P {
     line-height: 21px;
   }
-
-  button {
-    @include button-transparent;
-    text-decoration: underline;
-    line-height: 24px;
-    font-weight: 600;
-    color: $text-white;
-    cursor: pointer;
-  }
 }
 
 .language {

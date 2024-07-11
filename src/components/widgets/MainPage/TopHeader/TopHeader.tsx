@@ -1,4 +1,5 @@
 import { DropDown } from "../../../../shared/assets/MainPage";
+import { ShopNow } from "../ShopNow/ShopNow";
 import styles from "./TopHeader.module.scss";
 
 export function TopHeader(): JSX.Element {
@@ -9,7 +10,7 @@ export function TopHeader(): JSX.Element {
           <p>
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-          <button>ShopNow</button>
+          <ShopNow style={{ fontSize: "14px", fontWeight: "600" }} />
         </div>
         <div className={styles.language}>
           <p>English</p>

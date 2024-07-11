@@ -1,12 +1,15 @@
 @import "mixins";
 @import "variables";
 
+.wrapper {
+  margin-bottom: 140px;
+}
+
 .header {
   @include flex;
   margin-bottom: 60px;
 }
 
 .itemList {
-  @include grid(4, 2);
-  gap: 30px;
+  margin-bottom: 60px;
 }

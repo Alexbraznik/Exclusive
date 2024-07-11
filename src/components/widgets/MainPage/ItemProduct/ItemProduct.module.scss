@@ -16,7 +16,7 @@
       left: 0;
       margin: 12px 0 0 12px;
       padding: 4px 12px;
-      background-color: $crimson;
+      // background-color: $crimson;
       @include border-radius(4px);
 
       span {
@@ -78,6 +78,7 @@
   .item__rating {
     @include items-center;
     gap: 8px;
+    margin-bottom: 8px;
 
     p {
       font-size: 14px;
@@ -89,6 +90,28 @@
   }
 }
 
-.item__description-discount {
-  display: flex;
+.choiseColor {
+  @include items-center;
+  gap: 8px;
+
+  .color-one,
+  .color-two {
+    @include size(20px);
+    background-color: $crimson;
+    @include border-radius(50%);
+  }
+
+  .color-one {
+    border: 2px solid black;
+    position: relative;
+    background-color: #fb1314;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 2px solid white;
+      @include border-radius(50%);
+      inset: 0;
+    }
+  }
 }

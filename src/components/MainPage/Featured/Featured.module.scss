@@ -1,0 +1,102 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  padding-bottom: 140px;
+  position: relative;
+}
+
+.header {
+  margin-bottom: 60px;
+  @include items-center;
+
+  h2 {
+    @include h2;
+  }
+}
+
+.container {
+  @include flex;
+  gap: 30px;
+  margin-bottom: 140px;
+}
+
+.leftMenu {
+  width: 570px;
+  background-color: black;
+  position: relative;
+
+  .image {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.rightMenu {
+  @include flex-column;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  gap: 32px;
+
+  .rightMenu__womenBlock {
+    background-color: #0d0d0d;
+    position: relative;
+    height: 268px;
+
+    .image {
+      position: absolute;
+      height: 100%;
+      right: 0;
+    }
+  }
+
+  .rightMenu__bottom-block {
+    @include flex;
+    height: 284px;
+    gap: 30px;
+    position: relative;
+  }
+
+  .rightMenu__speakers,
+  .rightMenu__perfume {
+    background-color: green;
+    flex: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    position: relative;
+    @include flex-center;
+    background-color: black;
+    overflow: hidden;
+    z-index: 2;
+
+    .image {
+      position: absolute;
+    }
+  }
+
+  .blur {
+    filter: blur(130px);
+    position: absolute;
+    background-color: #d9d9d9;
+    width: 196px;
+    height: 196px;
+    @include border-radius(50%);
+    z-index: -1;
+  }
+
+  .leftMenu,
+  .rightMenu__womenBlock,
+  .rightMenu__speakers,
+  .rightMenu__perfume {
+    @include border-radius(4px);
+  }
+}
+
+.upArrow {
+  position: absolute;
+  bottom: 0;
+  right: -3%;
+  @include rotate(-90deg);
+  margin-bottom: 32px;
+}

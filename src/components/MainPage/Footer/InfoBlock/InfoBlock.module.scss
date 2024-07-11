@@ -1,0 +1,30 @@
+@import "mixins";
+
+.container {
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    list-style-type: none;
+    white-space: nowrap;
+
+    li {
+      margin-bottom: 16px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.link {
+  color: #fafafa;
+  text-decoration: none;
+
+  &:hover {
+    @include underline;
+  }
+}

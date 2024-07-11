@@ -1,0 +1,22 @@
+@import "mixins";
+
+.btn {
+  @include standart-text;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  @include underline;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: scale 0.3s ease;
+
+  align-self: flex-start;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+
+  &:hover {
+    scale: 1.1;
+  }
+}

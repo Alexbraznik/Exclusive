@@ -1,0 +1,131 @@
+@import "mixins";
+@import "variables";
+.wrapper {
+  width: 100vw;
+  background-color: black;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  gap: 75px;
+  color: #fafafa;
+  padding: 80px 0 60px;
+  align-items: baseline;
+  background-color: black;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.exclusive {
+  @include flex-column;
+  gap: 24px;
+
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .link {
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  form {
+    @include flex-column;
+
+    label {
+      margin-bottom: 16px;
+      @include standart-text;
+    }
+    div {
+      position: relative;
+      @include items-center;
+
+      input {
+        padding: 12px 5px;
+        background-color: black;
+        border: 1.5px solid #fafafa;
+        color: #fafafa;
+        @include border-radius(4px);
+      }
+
+      svg {
+        position: absolute;
+        right: 0;
+        padding-right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.support {
+  address {
+    @include standart-text;
+    font-style: inherit;
+  }
+}
+
+.link {
+  color: #fafafa;
+  text-decoration: none;
+
+  &:hover {
+    @include underline;
+  }
+}
+
+.download {
+  color: #fafafa;
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+
+  .social {
+    display: flex;
+    gap: 28px;
+
+    a {
+      color: white;
+    }
+
+    svg {
+      @include size(24px);
+    }
+  }
+}
+
+.copyright {
+  @include flex-center;
+  @include standart-text;
+  gap: 6px;
+  background-color: black;
+  color: white;
+  padding-top: 16px;
+  border-top: 1px solid rgba(white, 0.4);
+
+  p {
+    opacity: 0.3;
+    font-size: 14px;
+  }
+
+  span {
+    opacity: 0.3;
+    font-size: 20px;
+  }
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}

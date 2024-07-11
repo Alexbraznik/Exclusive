@@ -47,10 +47,11 @@
       @include standart-text;
       @include items-center;
       gap: 8px;
-      font-weight: 500;
-      text-decoration: underline;
-      text-underline-offset: 4px;
+      cursor: pointer;
 
+      &:hover {
+        opacity: 0.8;
+      }
       .arrow {
         width: 24px;
         height: 24px;

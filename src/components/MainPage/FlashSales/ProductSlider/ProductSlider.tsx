@@ -1,6 +1,4 @@
-import Image from "next/image";
 import styles from "./ProductSlider.module.scss";
-import Rating from "@mui/material/Rating";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ProductSliderList } from "../../constants/ProductSliderList";
@@ -8,7 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { RefObject, useState } from "react";
 import { useEffectSlider } from "../../../../shared/model";
-import { ItemImageIcons, ItemProduct } from "../../../widgets";
+import { ItemProduct } from "../../../widgets";
 
 interface IProductSliderProps {
   prevRef: RefObject<HTMLButtonElement>;
