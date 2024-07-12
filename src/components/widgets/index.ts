@@ -9,11 +9,11 @@ import { setTimer } from "./Timer/setTimer";
 
 export {
   RectangleCategory,
-  BtnArrow,
   Button,
   ItemImageIcons,
   ItemProduct,
   setTimer,
   ShopNow,
   UpArrow,
+  BtnArrow,
 };

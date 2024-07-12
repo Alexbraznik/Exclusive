@@ -27,6 +27,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:hover {
+      @include underline;
+    }
   }
 
   .categories__fashion {
@@ -36,6 +40,9 @@
 
     li {
       margin-right: 51px;
+    }
+    &:hover {
+      @include underline;
     }
 
     .dropdown {

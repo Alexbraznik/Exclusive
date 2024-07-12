@@ -1,5 +1,5 @@
+import { ShopNow } from "../../../components/widgets";
 import { DropDown } from "../../assets/MainPage";
-import { ShopNow } from "../../../components/widgets/MainPage/ShopNow/ShopNow";
 import styles from "./TopHeader.module.scss";
 
 export function TopHeader(): JSX.Element {
