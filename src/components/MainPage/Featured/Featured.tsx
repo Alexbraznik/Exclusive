@@ -88,7 +88,7 @@ export function Featured(): JSX.Element {
       </div>
 
       <Advantages />
-      <UpArrow className={styles.upArrow} />
+      {/* <UpArrow className={styles.upArrow} /> */}
     </section>
   );
 }

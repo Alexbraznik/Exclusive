@@ -28,6 +28,8 @@ export function Header(): JSX.Element {
           </div>
         </div>
       </div>
+
+      <div className={styles.line}></div>
     </header>
   );
 }

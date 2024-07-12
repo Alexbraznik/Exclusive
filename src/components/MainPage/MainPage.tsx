@@ -6,25 +6,27 @@ import {
   DiscountedProduct,
   Featured,
   FlashSales,
-  Footer,
   Header,
   OurProducts,
 } from "./";
+import { UpArrow } from "../widgets";
+import { TopHeader, Footer } from "../../shared/components";
 
 export function MainPage(): JSX.Element {
   return (
     <div className={styles.main}>
+      <TopHeader />
       <Header />
-      <div className={styles.wrapper}>
-        <div className={styles.container}>
-          <CategorySection />
-          <FlashSales />
-          <BrowseByCategory />
-          <BestSellingProducts />
-          <DiscountedProduct />
-          <OurProducts />
-          <Featured />
-        </div>
+      <div className={styles.container}>
+        <CategorySection />
+        <FlashSales />
+        <BrowseByCategory />
+        <BestSellingProducts />
+        <DiscountedProduct />
+        <OurProducts />
+        <Featured />
+
+        {/* <UpArrow className={styles.upArrow} /> */}
       </div>
       <Footer />
     </div>

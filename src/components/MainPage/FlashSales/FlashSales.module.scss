@@ -4,6 +4,12 @@
 .wrapper {
   border-bottom: 0.5px solid $border-gray;
   margin-bottom: 80px;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .flashSales {
@@ -14,4 +20,9 @@
     @include h2;
     margin-right: 87px;
   }
+}
+
+.ss {
+  width: 1170px;
+  margin: 0 auto;
 }

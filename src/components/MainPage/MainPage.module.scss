@@ -1,23 +1,17 @@
 @import "mixins";
 @import "variables";
 
-.main {
-  // min-height: 100vh; //поправить
-  position: relative;
-  margin: 0 auto;
-  // width: 1440px;
-  // width: 100vw;
-  // width: 100%;
-  overflow: hidden;
-}
-
-.wrapper {
-  overflow: hidden;
-}
 .container {
-  // max-width: 1170px;
   width: 1170px;
   @include flex-column;
   margin: 0 auto;
-  // background-color: lightcoral;
+  position: relative;
+}
+
+.upArrow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  @include rotate(-90deg);
+  margin-bottom: 32px;
 }

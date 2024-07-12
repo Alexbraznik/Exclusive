@@ -9,6 +9,7 @@
     @include flex-center;
     margin-bottom: 16px;
     position: relative;
+    overflow: hidden;
 
     .discount {
       position: absolute;
@@ -28,14 +29,16 @@
 
     .addCart {
       position: absolute;
-      bottom: 0;
+      bottom: -40px;
+      visibility: hidden;
+      opacity: 0;
       background-color: black;
       width: 100%;
       @include flex-center;
       cursor: pointer;
       border: 0;
       opacity: 0;
-      transition: opacity 0.5s ease;
+      transition: all 0.16s ease-in-out;
 
       p {
         padding: 8px 0;
@@ -46,6 +49,8 @@
     }
     &:hover {
       .addCart {
+        bottom: 0;
+        visibility: visible;
         opacity: 1;
       }
     }

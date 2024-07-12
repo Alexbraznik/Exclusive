@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { ProductSliderList } from "../../constants/ProductSliderList";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
-import { RefObject, useState } from "react";
+import { RefObject, useEffect, useState } from "react";
 import { useEffectSlider } from "../../../../shared/model";
 import { ItemProduct } from "../../../widgets";
 
@@ -26,7 +26,7 @@ export function ProductSlider({
       <Swiper
         className={styles.itemList}
         onSwiper={setSwiper}
-        slidesPerView={5}
+        slidesPerView={4}
         modules={[Navigation]}
         spaceBetween={30}
         loop={true}

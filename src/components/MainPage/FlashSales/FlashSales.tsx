@@ -12,20 +12,24 @@ export function FlashSales(): JSX.Element {
 
   return (
     <section className={styles.wrapper}>
-      <RectangleCategory>Today’s</RectangleCategory>
+      <div className={styles.container}>
+        <div className={styles.ss}>
+          <RectangleCategory>Today’s</RectangleCategory>
 
-      <div className={styles.flashSales}>
-        <h2>Flash Sales</h2>
+          <div className={styles.flashSales}>
+            <h2>Flash Sales</h2>
 
-        <Timer expiryTimestamp={expiryTimestamp} />
+            <Timer expiryTimestamp={expiryTimestamp} />
 
-        <BtnArrow prevRef={prevRef} nextRef={nextRef} />
+            <BtnArrow prevRef={prevRef} nextRef={nextRef} />
+          </div>
+        </div>
+
+        <ProductSlider prevRef={prevRef} nextRef={nextRef} />
+        <Button style={{ margin: "0 auto", marginBottom: "60px" }}>
+          View All Products
+        </Button>
       </div>
-
-      <ProductSlider prevRef={prevRef} nextRef={nextRef} />
-      <Button style={{ margin: "0 auto", marginBottom: "60px" }}>
-        View All Products
-      </Button>
     </section>
   );
 }

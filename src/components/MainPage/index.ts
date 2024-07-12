@@ -5,7 +5,6 @@ import { CategorySection } from "./CategorySection/CategorySection";
 import { DiscountedProduct } from "./DiscountedProduct/DiscountedProduct";
 import { Featured } from "./Featured/Featured";
 import { FlashSales } from "./FlashSales/FlashSales";
-import { Footer } from "./Footer/Footer";
 import { Header } from "./Header/Header";
 import { MainPage } from "./MainPage";
 import { OurProducts } from "./OurProducts/OurProducts";
@@ -27,7 +26,6 @@ export {
   DiscountedProduct,
   OurProducts,
   Featured,
-  Footer,
 };
 
 // constants

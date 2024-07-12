@@ -2,17 +2,21 @@
 @import "variables";
 
 .wrapper {
-  width: 100%;
   background-color: #000;
-  @include flex-center;
+  width: 100%;
 }
 
 .container {
-  @include items-center;
+  background-color: black;
   width: 1170px;
   height: 48px;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
+  margin: 0 auto;
+  @include items-center;
+  justify-content: end;
+
+  -webkit-box-pack: end; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-pack: end; /* OLD - Firefox 19- */
+  -ms-flex-pack: end; /* TWEENER - IE 10 */
 }
 
 .sale,
