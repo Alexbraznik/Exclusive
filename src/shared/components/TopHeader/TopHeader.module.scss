@@ -12,11 +12,11 @@
   height: 48px;
   margin: 0 auto;
   @include items-center;
-  justify-content: end;
+  justify-content: flex-end;
 
-  -webkit-box-pack: end; /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-pack: end; /* OLD - Firefox 19- */
-  -ms-flex-pack: end; /* TWEENER - IE 10 */
+  -webkit-box-pack: end; /* Old Webkit-based browsers (Safari, Chrome) */
+  -moz-box-pack: end; /* Old Firefox */
+  -ms-flex-pack: end; /* IE 10 */
 }
 
 .sale,

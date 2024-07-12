@@ -39,7 +39,7 @@ export function Featured(): JSX.Element {
               src={WomensCollections}
               alt="WomensCollections"
               priority
-              className={styles.image}
+              className={`${styles.image} ${styles["womensCollections-image"]}`}
               width={432}
               height={286}
             />

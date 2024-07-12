@@ -41,7 +41,7 @@ export function OurProducts(): JSX.Element {
         }}
         spaceBetween={30}
         modules={[Navigation, Grid]}
-        loop
+        // loop
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,

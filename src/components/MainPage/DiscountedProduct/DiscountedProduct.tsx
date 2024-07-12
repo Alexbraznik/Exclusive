@@ -44,7 +44,8 @@ export function DiscountedProduct(): JSX.Element {
         <Image
           src={Boombox}
           alt="Boombox"
-          layout="responsive"
+          width={568}
+          height={330}
           priority
           className={styles.image}
         ></Image>

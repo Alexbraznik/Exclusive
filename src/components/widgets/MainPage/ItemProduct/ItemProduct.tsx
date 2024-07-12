@@ -21,7 +21,12 @@ export function ItemProduct({
   return (
     <div className={styles.item}>
       <div className={styles["item__image-container"]}>
-        <Image src={item.image} alt={item.imageTitle} width={190}></Image>
+        <Image
+          src={item.image}
+          alt={item.imageTitle}
+          width={190}
+          priority
+        ></Image>
 
         {(item.discount || item.newProduct) && (
           <div
