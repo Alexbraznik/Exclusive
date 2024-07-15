@@ -2,7 +2,7 @@ import styles from "./MainPage.module.scss";
 import {
   BestSellingProducts,
   BrowseByCategory,
-  CategorySection,
+  CategoryList,
   DiscountedProduct,
   Featured,
   FlashSales,
@@ -18,7 +18,7 @@ export function MainPage(): JSX.Element {
       <TopHeader />
       <Header />
       <div className={styles.container}>
-        <CategorySection />
+        <CategoryList />
         <FlashSales />
         <BrowseByCategory />
         <BestSellingProducts />

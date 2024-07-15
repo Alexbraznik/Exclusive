@@ -1,7 +1,7 @@
 // components
 import { BestSellingProducts } from "./BestSellingProducts/BestSellingProducts";
 import { BrowseByCategory } from "./BrowseByCategory/BrowseByCategory";
-import { CategorySection } from "./CategorySection/CategorySection";
+import { CategoryList } from "./CategoryList/CategoryList";
 import { DiscountedProduct } from "./DiscountedProduct/DiscountedProduct";
 import { Featured } from "./Featured/Featured";
 import { FlashSales } from "./FlashSales/FlashSales";
@@ -11,7 +11,7 @@ import { OurProducts } from "./OurProducts/OurProducts";
 // constants
 import { BestSellingProductsList } from "./constants/BestSellingProductsList";
 import { BrowseByCategorySlider } from "./constants/BrowseByCategorySlider";
-import { CategoryMenuSlider } from "./constants/CategoryMenuSlider";
+import { CategorySectionSlider } from "./constants/CategorySectionSlider";
 import { OurProductsList } from "./constants/OurProductsList";
 import { ProductSliderList } from "./constants/ProductSliderList";
 
@@ -19,7 +19,7 @@ import { ProductSliderList } from "./constants/ProductSliderList";
 export {
   MainPage,
   Header,
-  CategorySection,
+  CategoryList,
   FlashSales,
   BrowseByCategory,
   BestSellingProducts,
@@ -30,7 +30,7 @@ export {
 
 // constants
 export {
-  CategoryMenuSlider,
+  CategorySectionSlider,
   ProductSliderList,
   BrowseByCategorySlider,
   BestSellingProductsList,

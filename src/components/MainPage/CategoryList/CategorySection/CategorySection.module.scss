@@ -3,13 +3,14 @@
 
 .wrapper {
   position: relative;
+  width: 220px;
 
   &::after {
     content: "";
     position: absolute;
     border-right: 0.5px solid $border-gray;
     height: calc(100% + 40px);
-    transform: translateY(-10.4%);
+    transform: translateY(-9.5%);
     top: 0;
     right: 0;
   }
@@ -21,7 +22,8 @@
   margin-right: 16px;
 
   li {
-    margin-bottom: 16px;
+    height: 24px;
+    padding: 8px 0;
     cursor: pointer;
 
     &:last-child {
@@ -29,26 +31,49 @@
     }
 
     &:hover {
-      @include underline;
+      font-weight: 700;
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      .dropdown {
+        @include size(16px);
+      }
     }
   }
 
   .categories__fashion {
     @include items-center;
-    align-items: baseline;
-    cursor: pointer;
-
-    li {
-      margin-right: 51px;
-    }
-    &:hover {
-      @include underline;
-    }
 
     .dropdown {
       color: #000;
       @include rotate(-90deg);
       margin-left: auto;
+    }
+  }
+}
+
+.categories li {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 8px;
+    margin-bottom: -3px;
+    transition: width 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    ul {
+      width: 200px;
     }
   }
 }

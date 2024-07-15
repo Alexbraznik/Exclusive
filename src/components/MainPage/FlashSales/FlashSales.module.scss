@@ -26,3 +26,14 @@
   width: 1170px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}

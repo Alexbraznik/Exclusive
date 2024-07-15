@@ -1,0 +1,21 @@
+@import "mixins";
+@import "variables";
+
+.wrapper {
+  background-color: black;
+  color: white;
+  width: 110px;
+  border-radius: 0 0 4px 4px;
+  @include items-column;
+
+  p {
+    padding-top: 14px;
+    @include standart-text;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}

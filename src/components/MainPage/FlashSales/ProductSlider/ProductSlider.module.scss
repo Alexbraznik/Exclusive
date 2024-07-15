@@ -4,8 +4,15 @@
 .wrapper {
   margin-bottom: 60px;
   height: auto;
+  min-width: 1170px;
 }
 
 .itemList {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .itemList {
+    // margin-left: 60px;
+  }
 }

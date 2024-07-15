@@ -34,6 +34,20 @@ export function ProductSlider({
           prevEl: prevRef.current,
           nextEl: nextRef.current,
         }}
+        breakpoints={{
+          1: {
+            slidesPerView: 2, // Если больше 480 пикселей
+          },
+          360: {
+            slidesPerView: 2, // Если больше 480 пикселей
+          },
+          768: {
+            slidesPerView: 3, // Если больше 480 пикселей
+          },
+          1024: {
+            slidesPerView: 4, // Если больше 768 пикселей
+          },
+        }}
       >
         {ProductSliderList.map((item) => (
           <SwiperSlide key={item.id}>

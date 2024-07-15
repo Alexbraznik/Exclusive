@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
 import { Iphone14 } from "../../../shared/assets/MainPage";
 
-interface ICategoryMenuSlider {
+interface ICategorySectionSlider {
   id: number;
   photo: StaticImageData;
 }
 
-export const CategoryMenuSlider: ICategoryMenuSlider[] = [
+export const CategorySectionSlider: ICategorySectionSlider[] = [
   {
     id: 1,
     photo: Iphone14,

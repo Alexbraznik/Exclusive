@@ -1,7 +1,7 @@
 import styles from "./Slider.module.scss";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { CategoryMenuSlider } from "../../constants/CategoryMenuSlider";
+import { CategorySectionSlider } from "../../constants/CategorySectionSlider";
 import Image from "next/image";
 import { FaApple } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
@@ -35,7 +35,7 @@ export function Slider(): JSX.Element {
         modules={[Pagination, Autoplay, Mousewheel]}
         pagination={{ clickable: true }}
         slidesPerView={1}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         mousewheel={{ sensitivity: 1 }}
         loop={true}
         style={
@@ -47,7 +47,7 @@ export function Slider(): JSX.Element {
           } as any
         }
       >
-        {CategoryMenuSlider.map((item) => (
+        {CategorySectionSlider.map((item) => (
           <SwiperSlide key={item.id} className={styles.item}>
             <div className={styles["item__description"]}>
               <div className={styles["item__description-title"]}>
@@ -56,7 +56,7 @@ export function Slider(): JSX.Element {
               </div>
               <p className={styles["item-voucher"]}>Up to 10% off Voucher</p>
               <div className={styles["item__action"]}>
-                <ShopNow style={{ scale: "1.01" }} />
+                <ShopNow />
                 <IoMdArrowForward className={styles.arrow} />
               </div>
             </div>

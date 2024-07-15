@@ -4,6 +4,8 @@
 .wrapper {
   background-color: #000;
   width: 100%;
+  position: relative;
+  z-index: 55;
 }
 
 .container {
@@ -47,4 +49,10 @@
       color: #fff;
     }
   }
+}
+
+.localizationCompWrapper {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-20%, 70%);
 }
